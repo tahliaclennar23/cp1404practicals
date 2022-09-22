@@ -1,26 +1,27 @@
 """
-CP1404 | Practical 02: Menus | Tahlia Clennar
-Program to ...
+CP1404 | Practical 02: Password Check with Functions | Tahlia Clennar
+Program to get password and error check for suitable length
 """
 
 
 def main():
     """main function"""
-
-    # getting user input
-    password = input("Enter Password: ")
-
-    # setting minimum password length
     minimum_password_length = 8
+    password = get_password(minimum_password_length)
+    print_asterisks(password)
 
-    # error checking
+
+def get_password(minimum_password_length):
+    """Get password and check if password is valid length"""
+    password = input("Enter Password: ")
     while len(password) < minimum_password_length:
         print("Password must be at least {} characters".format(minimum_password_length))
-
-        # getting user input again
         password = input("Enter Password: ")
+    return password
 
-    # printing asterisks as long as word
+
+def print_asterisks(password):
+    """Print asterisks equal to length of password"""
     print('*' * len(password))
 
 
