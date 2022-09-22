@@ -24,5 +24,4 @@ def main():
     print('*' * len(password))
 
 
-# calling main
 main()
