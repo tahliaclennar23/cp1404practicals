@@ -5,7 +5,7 @@ Program for temperature conversion | Tahlia Clennar
 
 
 def main():
-    """main function"""
+    """Convert between temperatures"""
     menu = """C - Convert Celsius to Fahrenheit
     F - Convert Fahrenheit to Celsius
     Q - Quit"""
@@ -17,11 +17,8 @@ def main():
             fahrenheit = celsius_to_fahrenheit(celsius)
             print("Result: {:.2f} F".format(fahrenheit))
         elif choice == "F":
-            # getting user input
             fahrenheit = float(input("Fahrenheit: "))
-            # applying conversion formula
             celsius = fahrenheit_to_celsius(fahrenheit)
-            # displaying the value calculated
             print("Result: {:.2f} C".format(celsius))
             pass
         else:
@@ -32,13 +29,13 @@ def main():
 
 
 def celsius_to_fahrenheit(celsius):
-    """ Function for converting Celsius to Fahrenheit"""
+    """Convert Celsius to Fahrenheit"""
     fahrenheit = celsius * 9.0 / 5 + 32
     return fahrenheit
 
 
 def fahrenheit_to_celsius(fahrenheit):
-    """Function for converting Fahrenheit to Celsius"""
+    """Convert Fahrenheit to Celsius"""
     celsius = 5 / 9 * (fahrenheit - 32)
     return celsius
 

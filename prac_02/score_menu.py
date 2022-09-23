@@ -5,15 +5,8 @@ Program to get a valid score and print result with stars
 
 
 def main():
-    """main function"""
-    # getting user input
-    score = int(input("Enter score: "))
-    # error checking
-    while score > 100 or score < 0:
-        print("Invalid score, enter score within range of 0-100")
-        # getting user input again
-        score = int(input("Enter score: "))
-    # setting up menu
+    """Get a valid score and print"""
+    score = get_valid_score()
     menu = """
             P - Print score
             S- Print stars
@@ -31,9 +24,17 @@ def main():
         choice = input(">>> ").upper()
 
 
+def get_valid_score():
+    """Get valid score"""
+    score = int(input("Enter score: "))
+    while score > 100 or score < 0:
+        print("Invalid score, enter score within range of 0-100")
+        score = int(input("Enter score: "))
+    return score
+
+
 def get_score(score):
-    """Function to take user's score and print result"""
-    # conditional logic for user score
+    """Take user score and print result"""
 
     if score >= 90:
         return "Excellent"

@@ -5,7 +5,7 @@ Program to get password and error check for suitable length
 
 
 def main():
-    """main function"""
+    """Check if password entered is suitable"""
     minimum_password_length = 8
     password = get_password(minimum_password_length)
     print_asterisks(password)

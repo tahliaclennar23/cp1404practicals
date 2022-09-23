@@ -6,20 +6,17 @@ import random
 
 
 def main():
-    """main function"""
-    # getting user input
+    """Provide result of user score and random score"""
     score = float(input("Enter score: "))
     print(get_score(score))
 
-    # getting random score
     random_score = random.randint(0, 100)
     print("Random Score: {}". format(random_score))
     print(get_score(random_score))
 
 
 def get_score(score):
-    """Function to take user's score and print result"""
-    # conditional logic for user score
+    """take user score and print result"""
     if score > 100 or score < 0:
         return "Invalid score"
     elif score >= 90:
