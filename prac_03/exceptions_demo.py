@@ -1,5 +1,8 @@
 """
-CP1404/CP5632 - Practical
+Tahlia Clennar
+CP1404 Practical 3- Exceptions Demo
+Program to use exceptions
+
 Answer the following questions:
 1. When will a ValueError occur? When the numerator and denominator aren't valid numbers
 2. When will a ZeroDivisionError occur? When the denominator is 0
