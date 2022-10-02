@@ -1,5 +1,7 @@
 """
-CP1404/CP5632 - Practical
+Tahlia Clennar
+CP1404 Practical 3- String Formatting
+Program to string format
 Various examples of using Python string formatting.
 (We prefer f-strings in this subject.)
 Want to read more about it?
