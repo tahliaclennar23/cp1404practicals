@@ -1,3 +1,8 @@
+"""
+Tahlia Clennar
+CP1404 Practical 03- Random Numbers
+Program to answer questions with random functions
+"""
 import random
 
 print(random.randint(5, 20))  # line 1
