@@ -1,11 +1,11 @@
 """
 Tahlia Clennar
 CP1404 Practical 03- Password Checker
-Program to check for a valid Password
+Program to check for a valid Password and count password characters
 """
 MIN_LENGTH = 2
 MAX_LENGTH = 6
-SPECIAL_CHARS_REQUIRED = False
+SPECIAL_CHARS_REQUIRED = True
 SPECIAL_CHARACTERS = "!@#$%^&*()_-=+`~,./'[]<>?{}|\\"
 
 
@@ -48,15 +48,20 @@ def is_valid_password(password):
             count_digit = count_digit + 1
         pass
         if char in SPECIAL_CHARACTERS:
-            count_special= count_special+1
+            count_special = count_special + 1
         pass
 
-    # TODO: if any of the 'normal' counts are zero, return False
+    if count_lower == 0:
+        return False
+    elif count_upper == 0:
+        return False
+    elif count_digit == 0:
+        return False
+    elif count_special == 0:
+        return False
+    else:
+        pass
 
-    # TODO: if special characters are required, then check the count of those
-    # and return False if it's zero
-
-    # if we get here (without returning False), then the password must be valid
     return True
 
 
