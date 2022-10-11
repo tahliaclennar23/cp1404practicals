@@ -1,5 +1,7 @@
 """
-
+Tahlia Clennar
+CP1404 Practical 4- "Quick Pick" Lottery Ticket Generator
+Program for generating quick pick lists
 """
 import random
 
