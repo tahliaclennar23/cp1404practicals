@@ -18,4 +18,4 @@ for i in range(quick_picks):
             random_number = random.randint(QUICK_PICK_MINIMUM, QUICK_PICK_MAXIMUM)
         quick_pick.append(random_number)
         quick_pick.sort()
-    print(quick_pick)
+    print(' '.join("{:2}".format(pick) for pick in quick_pick))
