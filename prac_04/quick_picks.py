@@ -14,5 +14,8 @@ for i in range(quick_picks):
     quick_pick = []
     for j in range(LENGTH_QUICK_PICK):
         random_number = random.randint(QUICK_PICK_MINIMUM, QUICK_PICK_MAXIMUM)
+        while random_number in quick_pick:
+            random_number = random.randint(QUICK_PICK_MINIMUM, QUICK_PICK_MAXIMUM)
         quick_pick.append(random_number)
+        quick_pick.sort()
     print(quick_pick)
