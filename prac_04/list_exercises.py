@@ -1,3 +1,8 @@
+"""
+Tahlia Clennar
+CP1404 Practical 4- Basic list operations
+Program for storing user input numbers as a list
+"""
 numbers = []
 for i in range(5):
     number = int(input(f"Enter NUmber: "))
