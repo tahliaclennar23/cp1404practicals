@@ -3,6 +3,7 @@ Tahlia Clennar
 CP1404 Practical 05- Word Occurrences
 Program to count the occurrences of words in a string.
 Estimate:25 minutes
+Actual: 35 minutes
 """
 
 user_text = input("Enter text: ")
