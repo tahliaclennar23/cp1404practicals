@@ -18,3 +18,7 @@ class ProgrammingLanguage:
     def __str__(self):
         """Provide coding information"""
         return f"{self.name}, {self.typing} Typing, Reflection= {self.reflection}, First appeared in {self.year}"
+
+    def is_dynamic(self):
+        """See if typing is dynamic"""
+        return self.typing == "Dynamic"
