@@ -1,3 +1,9 @@
+"""CP1404 Practical 6- Guitars!
+Tahlia Clennar
+Estimated time: 25 minutes
+Actual time: 15 minutes
+"""
+
 YEAR = 2022
 VINTAGE_YEAR = 50
 
