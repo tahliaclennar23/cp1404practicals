@@ -11,3 +11,6 @@ def run_guitar_tests():
     name = "Gibson L-5 CES"
     year = 1922
     cost = 16035.4
+
+    guitar = Guitar(name, year, cost)
+    another_guitar = Guitar("Another guitar", 2013, 5000)
