@@ -1,10 +1,12 @@
 """CP1404 Practical 6- Testing
 Tahlia Clennar
 Estimated time: 15 minutes
-Actual time:  minutes
+Actual time:  13 minutes
 """
-YEAR = 2022
+
 from prac_06.guitar import Guitar
+
+YEAR = 2022
 
 
 def run_guitar_tests():
@@ -19,3 +21,7 @@ def run_guitar_tests():
     print(f"{another_guitar.name} get_age ()- Expected {YEAR - 2000}. Got {YEAR - another_guitar.year}")
     print(f"{guitar.name} is_vintage()- Expected {True}. Got {guitar.is_vintage()}")
     print(f"{another_guitar.name} is_vintage() - Expected {False}. Got {another_guitar.is_vintage()}")
+
+
+if __name__ == '__main__':
+    run_guitar_tests()
