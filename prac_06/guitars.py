@@ -15,3 +15,6 @@ def main():
         year = int(input("Year: "))
         cost = float(input("Cost: "))
         print(f"{name}({year}) : {cost:,.2f} added.")
+        guitar = Guitar(name, year,cost)
+        guitars.append(guitar)
+        name = input("Name: ")
