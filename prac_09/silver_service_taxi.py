@@ -10,7 +10,7 @@ class SilverServiceTaxi(Taxi):
     """Class that inherits from taxi class"""
     flagfall = 4.50
 
-    def __init__(self, name, fuel, odometer, fanciness):
+    def __init__(self, name, fuel, fanciness):
         """Initialise a Taxi instance, based on parent class Car."""
         super().__init__(name, fuel)
         self.price_per_km *= fanciness
@@ -19,5 +19,8 @@ class SilverServiceTaxi(Taxi):
 
     def get_fare(self):
         """Return the price for the taxi trip."""
-        return f"{super().__str__()}, {self.current_fare_distance}km on current fare, ${self.price_per_km:.2f}/km plus" \
-               f"flagfall of ${self.flagfall}"
+        return super().get_fare() + self.flagfall
+
+    def __str__(self):
+        """Get output string with cost"""
+        return f"{super().__str__()} plus flagfall of ${self.flagfall}"
