@@ -36,6 +36,15 @@ def main():
                 print(f"Your {current_taxi.name} trip cost you ${cost:.2f}")
             else:
                 print("You need to choose a taxi before you can drive")
+        else:
+            print("Invalid choice")
+        print(f"Bill to date: ${total_cost:.2f}")
+        print(MENU)
         choice = input(">>> ").upper()
+    print(f"Total trip cost: ${total_cost:.2f}")
+    print("Taxis are now: ")
+    for i, taxi in enumerate(taxis):
+        print(f"{i} - {taxi}")
+
 
 main()
